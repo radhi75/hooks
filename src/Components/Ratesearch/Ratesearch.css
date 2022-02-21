@@ -1,0 +1,11 @@
+.one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-top: 1rem;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.808) 50%);
+}
