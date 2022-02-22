@@ -12,7 +12,7 @@ import Ratesearch from "./Components/Ratesearch/Ratesearch";
 function App() {
   const [Data, setData] = useState(moviesData);
   const [name, setName] = useState("");
-  const [rate, setRate] = useState("");
+  const [value, setValue] = useState(0);
   const addMovieCallback = (newfilm) => {
     return setData([...Data, newfilm]);
   };
@@ -22,9 +22,9 @@ function App() {
       <Navbar />
       <Feature />
       <Search setName={setName} />
-      <Ratesearch setRate={setRate} />
+      <Ratesearch setValue={setValue} value={value}/>
       <AddMovie addMovieCallback={addMovieCallback} />
-      <MovieList movies={Data} name={name} rate={rate} />
+      <MovieList movies={Data} name={name} value={value} />
 
       <Footer />
     </div>

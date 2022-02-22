@@ -32,7 +32,7 @@ const style = {
   const [Details,setDetails] =  useState('');
   const [Type,setGen] =  useState('');
   const [Date,setDate] =  useState('');
-  const [value,setValue] =  useState('');
+  const [value,setValue] =  useState(0);
 
   const handleSave =() =>{
       let newfilm ={
