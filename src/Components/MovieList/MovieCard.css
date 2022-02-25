@@ -38,3 +38,23 @@
 .gen {
   color: white;
 }
+.watch {
+  height: 2rem;
+  width: 200px;
+  font-size: large;
+  background-color: rgb(255, 230, 0);
+  border-radius: 5px;
+
+  margin-top: 10%;
+  margin-left: 15%;
+}
+.btn-watch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12.5%;
+}
+.btn-watch:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}

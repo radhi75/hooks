@@ -93,7 +93,7 @@ const style = {
           </div>
           <div>
           <Typography component="legend" className='inde'>Date</Typography>
-          <input type="date" placeholder="movie date" onChange={(event)=>setDate(event.target.value)}/>
+          <input type="month" placeholder="movie date" onChange={(event)=>setDate(event.target.value)}/>
           </div>
           <div>
           <Typography component="legend" className='inde'>Rating</Typography>

@@ -8,6 +8,10 @@
   z-index: 999;
   background: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.658) 50%);
 }
+.h2 {
+  text-decoration: none;
+  color: rgb(255, 230, 0);
+}
 .scrolled {
   background-color: black;
 }

@@ -2,6 +2,7 @@ import { Search, Notifications, ArrowDropDown } from "@material-ui/icons";
 import { useState } from "react";
 import React from "react";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -20,10 +21,10 @@ const Navbar = () => {
             alt="sitelogo"
           />
           <span href="Feature">
-            <h2>home</h2>
+            <Link to={`/home`} className="h2"><h2 >home</h2></Link>
           </span>
           <span href="List">
-            <h2>Movies</h2>
+           <Link to={`/Movies`} className="h2" > <h2>Movies</h2></Link>
           </span>
         </div>
         <div className="right">

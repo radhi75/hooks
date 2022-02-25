@@ -1,6 +1,7 @@
 import React from "react";
 import "./MovieCard.css";
 import { Rating } from "@mui/material";
+import { Link} from "react-router-dom";
 const MovieCard = ({ movie }) => {
   return (
     <div className="wrapper">
@@ -19,6 +20,9 @@ const MovieCard = ({ movie }) => {
           />
           <span className="para">{movie.description}</span>
         </div>
+      </div>
+      <div className="btn-watch">
+      <Link to={`/MovieList/${movie.id}`} ><button className="watch" >WATCH TRAILER</button></Link>
       </div>
     </div>
   );
